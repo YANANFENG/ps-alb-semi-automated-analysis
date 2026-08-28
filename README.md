@@ -68,3 +68,17 @@ The workflow was developed in Python and uses the following main packages:
 The current workflow is semi-automated. User input is retained for capillary-loop selection, ROI size definition and identification of the appropriate post-wash analysis window. Automated image registration, ROI tracking and fluorescence intensity extraction are then used to reduce repetitive frame-by-frame manual analysis.
 
 This code was developed as part of an MSc Bioinformatics research project at the University of Bristol.
+
+## Streamlit prototype interface
+
+A prototype Streamlit interface (`app.py`) is included to demonstrate the
+semi-automated Ps′alb analysis workflow in a more user-accessible format.
+
+The interface supports ND2 file loading, image registration, interactive
+capillary-loop selection, ROI tracking and quality control, fluorescence
+intensity extraction, decay fitting, capillary diameter measurement, and
+Ps′alb calculation.
+
+To run the interface locally:
+
+python3 -m streamlit run app.py

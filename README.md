@@ -69,16 +69,20 @@ The current workflow is semi-automated. User input is retained for capillary-loo
 
 This code was developed as part of an MSc Bioinformatics research project at the University of Bristol.
 
-## Streamlit prototype interface
+## Streamlit prototype
 
-A prototype Streamlit interface (`app.py`) is included to demonstrate the
-semi-automated Ps′alb analysis workflow in a more user-accessible format.
+A prototype Streamlit interface is included in `app.py` to demonstrate the
+semi-automated Ps′alb analysis workflow through an interactive interface.
 
-The interface supports ND2 file loading, image registration, interactive
-capillary-loop selection, ROI tracking and quality control, fluorescence
+The application includes ND2 file loading, image registration, interactive
+capillary-loop ROI selection, ROI tracking and quality control, fluorescence
 intensity extraction, decay fitting, capillary diameter measurement, and
 Ps′alb calculation.
 
+To run the application locally:
+
+```bash
+streamlit run app.py
 To run the interface locally:
 
 python3 -m streamlit run app.py
